@@ -31,4 +31,15 @@ export const styles = makeStyles({
       color: theme.text.bodyText2,
     },
   },
+  newStepper: {
+    "& .css-16ubnlw-MuiStepLabel-labelContainer": {
+      color: "#64ffda",
+    },
+    "& .css-qivjh0-MuiStepLabel-label.Mui-active": {
+      color: "#64ffda",
+    },
+    "& .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active": {
+      color: "#64ffda",
+    },
+  },
 });
