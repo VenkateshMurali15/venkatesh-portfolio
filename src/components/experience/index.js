@@ -115,7 +115,12 @@ function Experience({ id }) {
         <Stepper activeStep={activeStep} orientation="vertical">
           {steps.map((step, index) => (
             <Step key={step.label}>
-              <StepLabel optional={getRole(index)}>{step.label}</StepLabel>
+              <StepLabel
+                optional={getRole(index)}
+                // sx={color: theme.aquamarine.shade1 }
+              >
+                {step.label}
+              </StepLabel>
               <StepContent>
                 <Grid container spacing={2}>
                   {step.description.map((item, indexs) => {

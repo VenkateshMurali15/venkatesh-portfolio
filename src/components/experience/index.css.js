@@ -32,13 +32,16 @@ export const styles = makeStyles({
     },
   },
   newStepper: {
-    "& .css-16ubnlw-MuiStepLabel-labelContainer": {
+    "& .MuiStepLabel-label": {
       color: "#64ffda",
     },
-    "& .css-qivjh0-MuiStepLabel-label.Mui-active": {
+    "&  .MuiStepLabel-label .Mui-active": {
       color: "#64ffda",
     },
-    "& .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active": {
+    "& .MuiStepLabel-label .Mui-completed": {
+      color: "#64ffda",
+    },
+    "& .MuiStepLabel-label .Mui-disabled": {
       color: "#64ffda",
     },
   },
