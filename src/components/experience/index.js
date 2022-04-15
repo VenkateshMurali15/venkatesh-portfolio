@@ -118,10 +118,8 @@ function Experience({ id }) {
           // className={classes.stepper}
         >
           {steps.map((step, index) => (
-            <Step key={step.label} sx={{ color: theme.aquamarine.shade1 }}>
-              <StepLabel optional={getRole(index)} className={classes.stepper}>
-                {step.label}
-              </StepLabel>
+            <Step key={step.label} className={classes.stepper}>
+              <StepLabel optional={getRole(index)}>{step.label}</StepLabel>
               <StepContent>
                 <Grid container spacing={2}>
                   {step.description.map((item, indexs) => {
