@@ -111,7 +111,7 @@ function Experience({ id }) {
         </u>
         Where I have worked
       </Typography>
-      <div className={classes.newStepper}>
+      <div className={classes.stepper}>
         <Stepper activeStep={activeStep} orientation="vertical">
           {steps.map((step, index) => (
             <Step key={step.label}>
