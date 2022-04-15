@@ -16,16 +16,16 @@ export const styles = makeStyles({
   },
   stepper: {
     "& .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active": {
-      color: `${theme.aquamarine.shade1} !important`,
+      color: `#64ffda !important`,
     },
     "& .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed": {
-      color: `${theme.aquamarine.shade1} !important`,
+      color: `#64ffda !important`,
     },
     "& .css-qivjh0-MuiStepLabel-label.Mui-completed": {
-      color: `${theme.aquamarine.shade1} !important`,
+      color: `#64ffda !important`,
     },
     "& .css-qivjh0-MuiStepLabel-label.Mui-active": {
-      color: `${theme.aquamarine.shade1} !important`,
+      color: `#64ffda !important`,
     },
     "& .css-16ubnlw-MuiStepLabel-labelContainer": {
       color: theme.text.bodyText2,
