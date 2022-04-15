@@ -13,7 +13,7 @@ export const styles = createUseStyles({
   },
   menuContainer: {
     "@media only screen and (max-width: 600px)": { display: "none" },
-    "@media only screen and (min-width: 600px)": { display: "none" },
+    "@media only screen and (max-width: 992px)": { display: "none" },
     "@media only screen and (min-width: 992px)": {},
   },
 });
