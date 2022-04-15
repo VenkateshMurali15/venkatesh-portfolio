@@ -9,7 +9,11 @@ const styles = createUseStyles({
     justifyContent: "center",
     flexDirection: "column",
 
-    "@media only screen and (max-width: 600px)": { height: "100vh" },
+    "@media only screen and (max-width: 600px)": {
+      justifyContent: "flex-start",
+      paddingTop: 100,
+      minHeight: "80vh",
+    },
     "@media only screen and (min-width: 600px)": {
       height: "calc(100vh - 130px)",
     },

@@ -8,7 +8,10 @@ import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArro
 const styles = createUseStyles({
   rootContainer: {
     minHeight: "100vh",
-    "@media only screen and (max-width: 600px)": { marginBottom: 100 },
+    "@media only screen and (max-width: 600px)": {
+      marginBottom: 100,
+      paddingTop: 50,
+    },
   },
   imageClass: {
     objectFit: "cover",

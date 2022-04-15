@@ -57,7 +57,7 @@ function Contact({ id }) {
       <Grid container alignItems="center" justifyContent="center">
         {interested.map((item) => {
           return (
-            <Grid item xs={3} sm={3} md={3} lg={3}>
+            <Grid item xs={12} sm={12} md={3} lg={3}>
               <Grid container>
                 <Grid item>
                   <ArrowRightIcon style={{ color: theme.aquamarine.shade1 }} />

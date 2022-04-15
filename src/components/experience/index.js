@@ -100,7 +100,7 @@ function Experience({ id }) {
   };
 
   return (
-    <div style={{ minHeight: "100vh" }} id={id}>
+    <div className={classes.rootContainer} id={id}>
       <Typography
         variant="h4"
         gutterBottom
