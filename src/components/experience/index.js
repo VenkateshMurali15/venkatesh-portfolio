@@ -111,18 +111,14 @@ function Experience({ id }) {
         </u>
         Where I have worked
       </Typography>
-      <div className={classes.stepper}>
+      <div>
         <Stepper
           activeStep={activeStep}
           orientation="vertical"
-          sx={classes.stepper}
+          className={classes.stepper}
         >
           {steps.map((step, index) => (
-            <Step
-              key={step.label}
-              style={{ color: theme.aquamarine.shade1 }}
-              className={classes.stepper}
-            >
+            <Step key={step.label} sx={{ color: theme.aquamarine.shade1 }}>
               <StepLabel optional={getRole(index)}>{step.label}</StepLabel>
               <StepContent>
                 <Grid container spacing={2}>
