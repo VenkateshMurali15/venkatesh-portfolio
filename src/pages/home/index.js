@@ -2,6 +2,7 @@ import React from "react";
 import About from "../../components/about";
 import Contact from "../../components/contact";
 import Experience from "../../components/experience";
+import FooterSocial from "../../components/footer-social";
 import Header from "../../components/header";
 import Mail from "../../components/mail";
 import Project from "../../components/projects";
@@ -27,6 +28,7 @@ function Home() {
         <Project id="project" />
         <Contact id="contact" />
       </div>
+      <FooterSocial />
     </div>
   );
 }

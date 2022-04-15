@@ -88,15 +88,14 @@ function Contact({ id }) {
           );
         })}
       </Grid>
-      <Button
-        variant="contained"
-        onClick={() => {
-          "mailto:venkateshmuralikrish@gmail.com";
-        }}
-        sx={{ mt: 3 }}
+      <a
+        href="mailto:venkateshmuralikrish@gmail.com"
+        style={{ textDecoration: "none" }}
       >
-        Say Hello!
-      </Button>
+        <Button variant="contained" sx={{ mt: 3 }}>
+          Say Hello!
+        </Button>
+      </a>
     </div>
   );
 }

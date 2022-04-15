@@ -17,12 +17,12 @@ function Header() {
   return (
     <div className={classes.rootContainer}>
       <Grid container alignItems="center" justifyContent="center">
-        <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+        <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
           <div className={classes.logoContainer}>
             <img src={logo} alt="" className={classes.logo} />
           </div>
         </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+        <Grid item xs={12} sm={12} md={8} lg={8} xl={8}>
           <div className={classes.mobileMenuContainer}>
             <Grid
               container
