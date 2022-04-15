@@ -10,12 +10,20 @@ const styles = createUseStyles({
   boxContainer: {
     background: theme.background.shade2,
     boxShadow: "0 10px 30px -15px #112240",
-    "@media only screen and (max-width: 600px)": { padding: 10, width: "100%" },
+    borderRadius: 8,
+    "@media only screen and (max-width: 600px)": {
+      padding: 10,
+      width: "100%",
+    },
+    "@media only screen and (min-width: 600px)": {
+      width: 500,
+      height: 200,
+      marginTop: 24,
+      padding: 25,
+    },
     "@media only screen and (min-width: 992px)": {
       width: 500,
       height: 200,
-      boxShadow: "0 10px 30px -15px #112240",
-      borderRadius: 8,
       marginTop: 24,
       padding: 25,
     },

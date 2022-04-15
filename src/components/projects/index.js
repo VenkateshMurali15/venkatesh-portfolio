@@ -6,17 +6,22 @@ import ProjectContainer from "../project-container";
 
 const styles = createUseStyles({
   rootContainer: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "flex-start",
+    flexDirection: "column",
     "@media only screen and (max-width: 600px)": {
-      paddingTop: 100,
-      minHeight: "80vh",
+      minHeight: "100vh",
     },
-    "@media only screen and (min-width: 600px)": {},
+    "@media only screen and (min-width: 600px)": {
+      minHeight: "100vh",
+    },
     "@media only screen and (min-width: 992px)": {
       minHeight: "100vh",
     },
   },
   projectContainer: {
-    margin: "40px 20px",
+    // margin: "40px 20px",
   },
 });
 

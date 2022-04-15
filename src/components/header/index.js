@@ -14,10 +14,10 @@ function Header() {
   return (
     <div className={classes.rootContainer}>
       <Grid container alignItems="center" justifyContent="center">
-        <Grid item xs={12} sm={4} md={4} lg={6} xl={6}>
+        <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
           Logo
         </Grid>
-        <Grid item xs={12} sm={8} md={8} lg={6} xl={6}>
+        <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
           <div className={classes.mobileMenuContainer}>
             <Grid
               container

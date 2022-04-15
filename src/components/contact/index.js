@@ -50,15 +50,19 @@ function Contact({ id }) {
         variant="h6"
         gutterBottom
         component="div"
-        style={{ color: theme.text.bodyText2, textAlign: "center" }}
+        style={{
+          color: theme.text.bodyText2,
+          textAlign: "center",
+          marginTop: 100,
+        }}
       >
         Interested Roles
       </Typography>
       <Grid container alignItems="center" justifyContent="center">
         {interested.map((item) => {
           return (
-            <Grid item xs={12} sm={12} md={3} lg={3}>
-              <Grid container>
+            <Grid item xs={12} sm={12} md={4} lg={3}>
+              <Grid container alignItems="center" justifyContent="center">
                 <Grid item>
                   <ArrowRightIcon style={{ color: theme.aquamarine.shade1 }} />
                 </Grid>

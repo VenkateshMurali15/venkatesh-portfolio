@@ -7,10 +7,20 @@ import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArro
 
 const styles = createUseStyles({
   rootContainer: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "flex-start",
+    flexDirection: "column",
     minHeight: "100vh",
     "@media only screen and (max-width: 600px)": {
       marginBottom: 100,
       paddingTop: 50,
+    },
+    "@media only screen and (min-width: 992px)": {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "flex-start",
+      flexDirection: "column",
     },
   },
   imageClass: {
