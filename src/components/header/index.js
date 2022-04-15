@@ -8,16 +8,19 @@ import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import WebIconOutline from "@mui/icons-material/Web";
 import WorkHistoryIconOutline from "@mui/icons-material/WorkHistory";
 import ContactsIconOutline from "@mui/icons-material/Contacts";
+import logo from "../../assets/Logo.svg";
 
 function Header() {
   const classes = styles();
   return (
     <div className={classes.rootContainer}>
       <Grid container alignItems="center" justifyContent="center">
-        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
-          Logo
+        <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+          <div className={classes.logoContainer}>
+            <img src={logo} alt="" className={classes.logo} />
+          </div>
         </Grid>
-        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+        <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
           <div className={classes.mobileMenuContainer}>
             <Grid
               container

@@ -16,4 +16,26 @@ export const styles = createUseStyles({
     "@media only screen and (max-width: 992px)": { display: "none" },
     "@media only screen and (min-width: 992px)": {},
   },
+  logoContainer: {
+    "@media only screen and (max-width: 600px)": {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    "@media only screen and (min-width: 600px)": {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    "@media only screen and (min-width: 992px)": {
+      display: "flex",
+      justifyContent: "flex-start",
+      alignItems: "center",
+    },
+  },
+  logo: {
+    "@media only screen and (max-width: 600px)": { width: 200, height: 200 },
+    "@media only screen and (min-width: 600px)": { width: 200, height: 200 },
+    "@media only screen and (min-width: 992px)": { width: 200, height: 100 },
+  },
 });

@@ -1,7 +1,6 @@
 import {
   Button,
   Grid,
-  Paper,
   Step,
   StepContent,
   StepLabel,
@@ -107,57 +106,68 @@ function Experience({ id }) {
         component="div"
         style={{ color: theme.text.bodyText2 }}
       >
-        <a style={{ color: theme.aquamarine.shade1 }}> 02.</a> Where I have
-        worked
+        <a
+          style={{ color: theme.aquamarine.shade1 }}
+          href="venkateshmurali.com"
+        >
+          02.
+        </a>
+        Where I have worked
       </Typography>
-      <Stepper
-        activeStep={activeStep}
-        orientation="vertical"
-        className={classes.stepper}
-      >
-        {steps.map((step, index) => (
-          <Step key={step.label} style={{ color: theme.aquamarine.shade1 }}>
-            <StepLabel optional={getRole(index)}>{step.label}</StepLabel>
-            <StepContent>
-              <Grid container spacing={2}>
-                {step.description.map((item) => {
-                  return (
-                    <Grid item>
-                      <div style={{ display: "flex" }}>
-                        <KeyboardDoubleArrowRightIcon
-                          style={{ color: theme.aquamarine.shade1 }}
-                        />
-                        <Typography style={{ color: theme.text.bodyText }}>
-                          {item}
-                        </Typography>
-                      </div>
-                    </Grid>
-                  );
-                })}
-              </Grid>
+      <div className={classes.stepper}>
+        <Stepper
+          activeStep={activeStep}
+          orientation="vertical"
+          className={classes.stepper}
+        >
+          {steps.map((step, index) => (
+            <Step
+              key={step.label}
+              style={{ color: theme.aquamarine.shade1 }}
+              className={classes.stepper}
+            >
+              <StepLabel optional={getRole(index)}>{step.label}</StepLabel>
+              <StepContent>
+                <Grid container spacing={2}>
+                  {step.description.map((item, indexs) => {
+                    return (
+                      <Grid item key={indexs}>
+                        <div style={{ display: "flex" }}>
+                          <KeyboardDoubleArrowRightIcon
+                            style={{ color: theme.aquamarine.shade1 }}
+                          />
+                          <Typography style={{ color: theme.text.bodyText }}>
+                            {item}
+                          </Typography>
+                        </div>
+                      </Grid>
+                    );
+                  })}
+                </Grid>
 
-              <Box sx={{ mb: 2 }}>
-                <div>
-                  <Button
-                    variant="contained"
-                    onClick={handleNext}
-                    sx={{ mt: 1, mr: 1 }}
-                  >
-                    {index === steps.length - 1 ? "Finish" : "Continue"}
-                  </Button>
-                  <Button
-                    disabled={index === 0}
-                    onClick={handleBack}
-                    sx={{ mt: 1, mr: 1 }}
-                  >
-                    Back
-                  </Button>
-                </div>
-              </Box>
-            </StepContent>
-          </Step>
-        ))}
-      </Stepper>
+                <Box sx={{ mb: 2 }}>
+                  <div>
+                    <Button
+                      variant="contained"
+                      onClick={handleNext}
+                      sx={{ mt: 1, mr: 1 }}
+                    >
+                      {index === steps.length - 1 ? "Finish" : "Continue"}
+                    </Button>
+                    <Button
+                      disabled={index === 0}
+                      onClick={handleBack}
+                      sx={{ mt: 1, mr: 1 }}
+                    >
+                      Back
+                    </Button>
+                  </div>
+                </Box>
+              </StepContent>
+            </Step>
+          ))}
+        </Stepper>
+      </div>
       {activeStep === steps.length && (
         <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
           View Again!

@@ -54,7 +54,13 @@ function About({ id }) {
         component="div"
         style={{ color: theme.text.bodyText2 }}
       >
-        <a style={{ color: theme.aquamarine.shade1 }}> 01.</a> About
+        <a
+          style={{ color: theme.aquamarine.shade1 }}
+          href="www.venkateshmurali.com"
+        >
+          01.
+        </a>
+        About
       </Typography>
       <Grid container spacing={4} alignItems="center" justifyContent="center">
         <Grid item md={6} lg={6}>
@@ -99,9 +105,9 @@ function About({ id }) {
                 Here are a few technologies I’ve been working with recently:
               </Typography>
               <Grid container spacing={2}>
-                {technologies.map((item) => {
+                {technologies.map((item, index) => {
                   return (
-                    <Grid item xs={6} sm={6} md={6} lg={6}>
+                    <Grid item xs={6} sm={6} md={6} lg={6} key={index}>
                       <div style={{ display: "flex" }}>
                         <KeyboardDoubleArrowRightIcon
                           style={{ color: theme.aquamarine.shade1 }}

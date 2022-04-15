@@ -1,4 +1,4 @@
-import { Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import React from "react";
 import { createUseStyles } from "react-jss";
 import theme from "../../style/theme";

@@ -26,7 +26,14 @@ function Contact({ id }) {
         component="div"
         style={{ color: theme.text.bodyText2 }}
       >
-        <a style={{ color: theme.aquamarine.shade1 }}> 04.</a> What's Next?
+        <a
+          style={{ color: theme.aquamarine.shade1 }}
+          href="venkateshmurali.com"
+        >
+          {" "}
+          04.
+        </a>{" "}
+        What's Next?
       </Typography>
       <Typography
         variant="h3"
@@ -59,9 +66,9 @@ function Contact({ id }) {
         Interested Roles
       </Typography>
       <Grid container alignItems="center" justifyContent="center">
-        {interested.map((item) => {
+        {interested.map((item, index) => {
           return (
-            <Grid item xs={12} sm={12} md={4} lg={3}>
+            <Grid item xs={12} sm={12} md={4} lg={3} key={index}>
               <Grid container alignItems="center" justifyContent="center">
                 <Grid item>
                   <ArrowRightIcon style={{ color: theme.aquamarine.shade1 }} />
