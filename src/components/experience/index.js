@@ -106,19 +106,16 @@ function Experience({ id }) {
         component="div"
         style={{ color: theme.text.bodyText2 }}
       >
-        <a
-          style={{ color: theme.aquamarine.shade1 }}
-          href="venkateshmurali.com"
-        >
+        <u style={{ color: theme.aquamarine.shade1, textDecoration: "none" }}>
           02.
-        </a>
+        </u>
         Where I have worked
       </Typography>
       <div className={classes.stepper}>
         <Stepper
           activeStep={activeStep}
           orientation="vertical"
-          className={classes.stepper}
+          sx={classes.stepper}
         >
           {steps.map((step, index) => (
             <Step

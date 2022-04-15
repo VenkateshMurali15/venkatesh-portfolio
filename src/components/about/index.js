@@ -54,12 +54,9 @@ function About({ id }) {
         component="div"
         style={{ color: theme.text.bodyText2 }}
       >
-        <a
-          style={{ color: theme.aquamarine.shade1 }}
-          href="www.venkateshmurali.com"
-        >
+        <u style={{ color: theme.aquamarine.shade1, textDecoration: "none" }}>
           01.
-        </a>
+        </u>
         About
       </Typography>
       <Grid container spacing={4} alignItems="center" justifyContent="center">

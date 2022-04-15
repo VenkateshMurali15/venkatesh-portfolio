@@ -26,13 +26,9 @@ function Contact({ id }) {
         component="div"
         style={{ color: theme.text.bodyText2 }}
       >
-        <a
-          style={{ color: theme.aquamarine.shade1 }}
-          href="venkateshmurali.com"
-        >
-          {" "}
+        <u style={{ color: theme.aquamarine.shade1, textDecoration: "none" }}>
           04.
-        </a>{" "}
+        </u>
         What's Next?
       </Typography>
       <Typography
