@@ -6,8 +6,10 @@ export const styles = createUseStyles({
     background: theme.background.shade1,
   },
   socialSection: {
-    "@media only screen and (max-width: 600px)": { display: "none" },
-    "@media only screen and (min-width: 600px)": {
+    "@media only screen and (max-width: 600px)": {
+      display: "none",
+    },
+    "@media only screen and (max-width: 992px)": {
       display: "none",
     },
     "@media only screen and (min-width: 992px)": {
@@ -20,8 +22,10 @@ export const styles = createUseStyles({
     },
   },
   mailSection: {
-    "@media only screen and (max-width: 600px)": { display: "none" },
-    "@media only screen and (min-width: 600px)": {
+    "@media only screen and (max-width: 600px)": {
+      display: "none",
+    },
+    "@media only screen and (max-width: 992px)": {
       display: "none",
     },
     "@media only screen and (min-width: 992px)": {

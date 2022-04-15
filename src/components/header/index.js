@@ -9,6 +9,8 @@ import WebIconOutline from "@mui/icons-material/Web";
 import WorkHistoryIconOutline from "@mui/icons-material/WorkHistory";
 import ContactsIconOutline from "@mui/icons-material/Contacts";
 import logo from "../../assets/Logo.svg";
+import Button from "../button";
+import resume from "../../assets/resume.pdf";
 
 function Header() {
   const classes = styles();
@@ -47,6 +49,16 @@ function Header() {
                 <Link to="contact" spy={true} smooth={true}>
                   <HeaderItem title="Contact" Icon={ContactsIconOutline} />
                 </Link>
+              </Grid>
+              <Grid item>
+                <Button
+                  variant="contained"
+                  onClick={() => {
+                    window.open(resume);
+                  }}
+                >
+                  Resume
+                </Button>
               </Grid>
             </Grid>
           </div>
@@ -104,6 +116,16 @@ function Header() {
                     04. Contact
                   </Typography>
                 </Link>
+              </Grid>
+              <Grid item>
+                <Button
+                  variant="contained"
+                  onClick={() => {
+                    window.open(resume);
+                  }}
+                >
+                  Resume
+                </Button>
               </Grid>
             </Grid>
           </div>

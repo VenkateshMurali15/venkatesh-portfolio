@@ -1,5 +1,4 @@
 import {
-  Button,
   Grid,
   Step,
   StepContent,
@@ -13,6 +12,7 @@ import theme from "../../style/theme";
 import { styles } from "./index.css";
 
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import Button from "../button";
 
 function Experience({ id }) {
   const [activeStep, setActiveStep] = React.useState(0);

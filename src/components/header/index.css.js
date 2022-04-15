@@ -4,7 +4,7 @@ import theme from "../../style/theme";
 export const styles = createUseStyles({
   rootContainer: {
     background: theme.background.shade1,
-    margin: "20px 40px",
+    margin: "0px 40px",
   },
   mobileMenuContainer: {
     "@media only screen and (max-width: 600px)": {},

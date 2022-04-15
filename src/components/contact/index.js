@@ -2,6 +2,7 @@ import { Grid, Typography } from "@mui/material";
 import React from "react";
 import theme from "../../style/theme";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+import Button from "../button";
 
 function Contact({ id }) {
   const interested = [
@@ -87,16 +88,15 @@ function Contact({ id }) {
           );
         })}
       </Grid>
-      <u
-        href="mailto:venkateshmuralikrish@gmail.com"
-        style={{
-          color: theme.aquamarine.shade1,
-          marginTop: 25,
-          cursor: "pointer",
+      <Button
+        variant="contained"
+        onClick={() => {
+          "mailto:venkateshmuralikrish@gmail.com";
         }}
+        sx={{ mt: 3 }}
       >
         Say Hello!
-      </u>
+      </Button>
     </div>
   );
 }
