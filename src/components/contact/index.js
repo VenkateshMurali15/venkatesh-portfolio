@@ -3,6 +3,7 @@ import React from "react";
 import theme from "../../style/theme";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import Button from "../button";
+import Calendly from "../calendly";
 
 function Contact({ id }) {
   const interested = [
@@ -88,14 +89,8 @@ function Contact({ id }) {
           );
         })}
       </Grid>
-      <a
-        href="mailto:venkateshmuralikrish@gmail.com"
-        style={{ textDecoration: "none" }}
-      >
-        <Button variant="contained" sx={{ mt: 3 }}>
-          Say Hello!
-        </Button>
-      </a>
+
+      <Calendly />
     </div>
   );
 }
