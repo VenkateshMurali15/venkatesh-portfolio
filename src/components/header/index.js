@@ -57,7 +57,7 @@ function Header() {
                     window.open(resume);
                   }}
                 >
-                  Resume
+                  Resume/CV
                 </Button>
               </Grid>
             </Grid>
