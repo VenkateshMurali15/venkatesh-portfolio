@@ -20,7 +20,7 @@ function SocialSection() {
           <GitHubIcon
             style={{ color: theme.text.bodyText, cursor: "pointer" }}
             onClick={() => {
-              window.open("https://github.com/VenkateshMurali15");
+              window.open("https://github.com/Venkatesh157");
             }}
           />
         </Grid>

@@ -43,7 +43,9 @@ function About({ id }) {
     "Tailwind CSS",
     "TypeScript",
     "Next JS",
-    "Prismic",
+    "Jest",
+    "Playwright",
+    "Jotai",
   ];
 
   return (
@@ -83,10 +85,10 @@ function About({ id }) {
               >
                 Fast forward to today, and I've had the privilege of{" "}
                 <a
-                  href="https://hashdhronas.com/"
+                  href="https://hey.car/"
                   style={{ color: theme.aquamarine.shade1, cursor: "pointer" }}
                 >
-                  Co-founding a Service based startup - Hash Dhronas.
+                  developing exceptional used car buying experiences at heycar
                 </a>
                 . My main focus these days is to work a startup and build
                 accessible products and digital experiences.

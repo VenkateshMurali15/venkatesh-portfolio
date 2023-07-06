@@ -61,10 +61,10 @@ function Welcome() {
         designing) exceptional digital experiences. Currently, I’m focused on
         building accessible, human-centered products at{" "}
         <u
-          href="https://www.cognizant.com/"
+          href="https://www.hey.car/"
           style={{ color: theme.aquamarine.shade1, cursor: "pointer" }}
         >
-          Cognizant.
+          Mobility Trader Gmbh - heycar.
         </u>
       </Typography>
     </div>

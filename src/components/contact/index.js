@@ -2,7 +2,6 @@ import { Grid, Typography } from "@mui/material";
 import React from "react";
 import theme from "../../style/theme";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-import Button from "../button";
 import Calendly from "../calendly";
 
 function Contact({ id }) {
